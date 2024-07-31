@@ -90,7 +90,7 @@ export function UpdateBooks({book, setBook}){
                 </div>
                 <div className="flex items-center">
                 <span className="text-xl mx-3 text-white">Precio </span>
-                <input onChange={handleChange}  type="text" placeholder={book.price} name="price" className="mb-3 input input-bordered w-full" />
+                <input onChange={handleChange}  type="number" placeholder={book.price} name="price" className="mb-3 input input-bordered w-full" />
 
                 </div>
                 <div className="flex items-center">

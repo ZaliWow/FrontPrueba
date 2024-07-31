@@ -30,10 +30,10 @@ export function ApiStatus(params) {
     </div>
   )
   //errores
-  else if (status === "error ")return (
+  else if (status === "error")return (
     <div role="alert" className="w-1/2 fixed top-20 alert  lg:w-72 lg:p-8  z-20  right-10 bg-red-300 ">
 
-     <p>X</p>
+     <p onClick={closeAlert}>X</p>
       <span>Algo ha salido mal.</span>
     
     </div>

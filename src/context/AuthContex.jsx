@@ -21,6 +21,7 @@ export function AuthProvider({children}){
                 body:JSON.stringify(credentials)
             })
             const data = await response.json();
+            if(data.access_token === undefined)return handleApiStatus("error")
             setAuth({ token: data.access_token });
             localStorage.setItem('token', data.access_token);
             navigate('/')
